@@ -1,0 +1,272 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="for_smartphone_navbar.css" />
+    <link rel="stylesheet" href="for_smarphone_frontpage.css" />
+    <title>Bill_Bot</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #f1faee;
+      }
+
+      .nav_bar {
+        position: absolute;
+        width: 200px;
+        height: 100%;
+        background-color: #1d3557;
+        left: -200px;
+        margin-top: -70px;
+      }
+
+      .active,
+      .nav_bar:hover {
+        left: 0;
+      }
+
+      .nav_bar ul li {
+        list-style: none;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        color: #f1faee;
+      }
+
+      .nav_bar .toogle_but {
+        position: absolute;
+        left: 215px;
+        top: 20px;
+      }
+
+      .toogle_but span {
+        width: 35px;
+        height: 3px;
+        background-color: #1d3557;
+        display: block;
+        margin-top: 4px;
+      }
+
+      .secondary {
+        background-color: #1d3557;
+        margin-top: 70px;
+        padding: 10px;
+      }
+      .food_menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 10px;
+        background-color: #a8dadc;
+        padding: 10px;
+      }
+      .food_menu div {
+        text-align: center;
+        padding: 10px;
+      }
+
+      .food_menu img {
+        padding-bottom: 10px;
+      }
+
+      .tikki_chaat {
+        padding-left: 15px;
+        padding-top: 7px;
+      }
+
+      .bhel {
+        padding-left: 5px;
+      }
+
+      #samosa {
+        padding-left: 19px;
+      }
+      #pani_puri {
+        padding-left: 22px;
+      }
+      #vada {
+        padding-left: 15px;
+      }
+      #imvp {
+        padding-bottom: 15px;
+      }
+      #imns {
+        padding-top: -100px;
+      }
+      #ns {
+        padding-left: 2px;
+      }
+
+      .table_cont {
+        margin-top: 100px;
+        margin-right: 0px;
+        padding-bottom: 350px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #a8dadc;
+      }
+      th,
+      td {
+        color: #f1faee;
+        padding: 2px;
+      }
+
+      table,
+      tr,
+      th,
+      td {
+        border: 2px solid #f1faee;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      table {
+        width: 100%;
+      }
+      th {
+        background-color: #e63946;
+      }
+      tr {
+        background-color: #1d3557;
+      }
+      tr:nth-child(odd) {
+        background-color: #457b9d;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- markup for the sliding navigation bar -->
+    <nav class="nav_bar">
+      <div class="head_of_nb">
+        <div class="toogle_but">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <ul id="menu_1">
+        <li class="item">Your Account</li>
+        <li class="item">items</li>
+        <li class="item">Help</li>
+        <li class="item">Contact us</li>
+      </ul>
+    </nav>
+    <!-- markup for the main display page  -->
+
+    <!-- markup for the menu -->
+    <div class="secondary">
+      <div class="food_menu">
+        <div>
+          <img
+            style="height: 80px"
+            src="Images_used/front_page/Samosa.png"
+            alt="Samosa"
+            onclick="add_samosa()"
+          />
+          <span id="samosa">Samosa</span>
+        </div>
+        <div>
+          <img
+            style="height: 80px"
+            src="Images_used/front_page/Pani_puri.png"
+            alt="Pani Pani_puri"
+            onclick="add_pani_puri()"
+          /><span id="Pani_puri">Pani Puri</span>
+        </div>
+        <div class="tikki_chaat">
+          <img
+            style="height: 70px"
+            src="Images_used/front_page/tikki_chat.png"
+            alt="Tikki Chaat"
+            onclick="add_tik_cht()"
+          /><span id="tikki"
+            ><br />
+            Tikki Chaat</span
+          >
+        </div>
+        <div class="bhel">
+          <img
+            style="height: 70px"
+            src="Images_used/front_page/bhel.png"
+            alt="Indori bhel"
+            onclick="add_indori_bhel()"
+          />
+          <span id="Inbh"><br />Indori Bhel</span>
+        </div>
+        <div>
+          <img
+            id="imvp"
+            style="height: 70px"
+            src="Images_used/front_page/vada_paw.png"
+            alt="vada Pav"
+            onclick="add_vada_pav()"
+          />
+          <span id="vada">Vada Pav</span>
+        </div>
+        <div class="npn">
+          <img
+            id="imns"
+            style="height: 75px"
+            src="Images_used/front_page/neembu_soda.png"
+            alt=" neembu soda"
+            onclick="add_nbs()"
+          />
+          <span id="ns">Neembu Soda</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- markup for the Items table -->
+    <div class="table_cont">
+      <table>
+        <tr>
+          <th>Sr no.</th>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Amount</th>
+        </tr>
+        <tr>
+          <td>ufb</td>
+          <td>ufb</td>
+          <td>ufb</td>
+          <td>ufb</td>
+        </tr>
+        <tr>
+          <td>ufb</td>
+          <td>ufb</td>
+          <td>ufb</td>
+          <td>ufb</td>
+        </tr>
+        <tr>
+          <td>ufb</td>
+          <td>ufb</td>
+          <td>ufb</td>
+          <td>ufb</td>
+        </tr>
+        <tr>
+          <td>ufb</td>
+          <td>ufb</td>
+          <td>ufb</td>
+          <td>ufb</td>
+        </tr>
+        <tr>
+          <td>ufb</td>
+          <td>ufb</td>
+          <td>ufb</td>
+          <td>ufb</td>
+        </tr>
+        <tr>
+          <td>ufb</td>
+          <td>ufb</td>
+          <td>ufb</td>
+          <td>ufb</td>
+        </tr>
+      </table>
+    </div>
+    <footer></footer>
+    <script src="for_smartphone.js"></script>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="for_smartphone_navbar.css" />
+    <link rel="stylesheet" href="for_smarphone_frontpage.css" />
+    <link
+      rel="icon"
+      href="Images_used/favicon/chatbot.png"
+      type="image/x-icon"
+    />
+    <title>Bill_Bot</title>
+  </head>
+  <body>
+    <!-- markup for the sliding navigation bar -->
+    <nav class="nav_bar" onclick="show_nb()" onblur="hide_nb()">
+      <div class="toogle_but" onblur="hide_nb()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="menu_1">
+        <li class="item">
+          <a href="../Your_Account/yourAccount.html"> Your Account </a>
+        </li>
+        <li class="item"><a href="../help/help.html"> Help </a></li>
+        <li class="item">
+          <a href="../contact_us/contact_us.html"> Contact us </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- markup for the main display page  -->
+    <!-- markup for the menu -->
+    <div class="secondary">
+      <div class="food_menu">
+        <div class="cell">
+          <div class="pic_C">
+            <img
+              style="height: 80px"
+              src="Images_used/front_page/Samosa.png"
+              alt="Samosa"
+              onclick="add_item(0)"
+            />
+          </div>
+          <div class="name_C">
+            <span id="samosa">Samosa <br /> </span>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="pic_C">
+            <img
+              style="height: 80px"
+              src="Images_used/front_page/Pani_puri.png"
+              alt="Pani Pani_puri"
+              onclick="add_item(1)"
+            />
+          </div>
+          <div class="name_C">
+            <span id="Pani_puri">Pani Puri <br /> </span>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="pic_C">
+            <img
+              id="tkc"
+              style="height: 80px"
+              src="Images_used/front_page/tikki_chat.png"
+              alt="Tikki Chaat"
+              onclick="add_item(2)"
+            />
+          </div>
+          <div class="name_C">
+            <span id="tikki">
+              Tikki<br />
+              Chaat <br />
+            </span>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="pic_C">
+            <img
+              style="height: 80px"
+              src="Images_used/front_page/bhel.png"
+              alt="Indori bhel"
+              onclick="add_item(3)"
+            />
+          </div>
+          <div class="name_C">
+            <span id="Inbh">Indori Bhel</span>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="pic_C">
+            <img
+              id="imvp"
+              style="height: 80px"
+              src="Images_used/front_page/vada_paw.png"
+              alt="vada Pav"
+              onclick="add_item(4)"
+            />
+          </div>
+          <div class="name_C">
+            <span id="vada">Vada Pav</span>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="pic_C">
+            <img
+              id="imns"
+              style="height: 80px"
+              src="Images_used/front_page/neembu_soda.png"
+              alt=" neembu soda"
+              onclick="add_item(5)"
+            />
+          </div>
+          <div class="name_C">
+            <span id="ns"
+              >Neembu <br />
+              Pani</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- markup for the Items table -->
+    <div class="table_cont">
+      <table>
+        <tr>
+          <th style="width: 15%">Sr no.</th>
+          <th style="width: 30%">Item</th>
+          <th style="width: 25%">Quantity</th>
+          <th>Amount</th>
+        </tr>
+        <tr>
+          <td id="11"></td>
+          <td id="12"></td>
+          <td id="13"></td>
+          <td id="14"></td>
+        </tr>
+        <tr>
+          <td id="21"></td>
+          <td id="22"></td>
+          <td id="23"></td>
+          <td id="24"></td>
+        </tr>
+        <tr>
+          <td id="31"></td>
+          <td id="32"></td>
+          <td id="33"></td>
+          <td id="34"></td>
+        </tr>
+        <tr>
+          <td id="41"></td>
+          <td id="42"></td>
+          <td id="43"></td>
+          <td id="44"></td>
+        </tr>
+        <tr>
+          <td id="51"></td>
+          <td id="52"></td>
+          <td id="53"></td>
+          <td id="54"></td>
+        </tr>
+        <tr>
+          <td id="61"></td>
+          <td id="62"></td>
+          <td id="63"></td>
+          <td id="64"></td>
+        </tr>
+        <tr>
+          <td colspan="3">Total (untaxed)</td>
+          <td id="total"></td>
+        </tr>
+        <tr>
+          <td colspan="3">GST @ 5%</td>
+          <td id="gst"></td>
+        </tr>
+        <tr>
+          <td colspan="3">Grand Total</td>
+          <td id="total_gst"></td>
+        </tr>
+      </table>
+      <!-- markup for the bill split -->
+      <div class="cont">
+      <h2>Split among people ? </h2>
+        <div class="dec_but">-</div>
+        <div class="inc_but">+</div>
+        <div class="display">0</div>
+      </div>
+      <!-- markup for the print button -->
+      <div class="print">
+        <button
+          style="text-align: center"
+          id="but"
+          type="button"
+          onclick="clear_table()"
+        >
+          PRINT
+        </button>
+      </div>
+    </div>
+
+    <script src="for_smartphone.js"></script>
+  </body>
+</html>

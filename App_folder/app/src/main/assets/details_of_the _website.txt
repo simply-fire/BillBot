@@ -1,0 +1,8 @@
+food_items
+	
+	1. Samosa
+	2. Pani Puri
+	3. Indori Bhel
+	4. Chole Tikki
+	5. Vada paw
+	6. Neembu Soda

@@ -1,0 +1,152 @@
+.secondary {
+  background-color: #301008;
+  margin-top: 70px;
+  padding: 10px;
+  border-radius: 30px;
+}
+.food_menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  background-color: #f4d8ae;
+  padding: 10px;
+  border-radius: 30px;
+  max-width: 100%;
+}
+.cell {
+  text-align: center;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #f58278;
+  max-width: 100%;
+}
+
+.food_menu img {
+  padding-bottom: 10px;
+  text-align: center;
+  max-width: 100%;
+}
+
+
+.table_cont {
+  margin-top: 70px;
+  margin-right: 0px;
+  padding-bottom: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f4d8ae;
+  text-align: center;
+  border-radius: 30px;
+}
+th {
+  color: #f4d8ae;
+  padding: 2px;
+}
+
+table,
+tr,
+th,
+td {
+  border: 2px solid #f4d8ae;
+  border-collapse: collapse;
+  text-align: center;
+  border-radius: 30px;
+}
+table {
+  width: 100%;
+}
+td{
+  color: #301008;
+  font-weight: 600;
+  padding: 1px;
+  vertical-align: middle;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+th {
+  background-color: #301008;
+}
+tr {
+  background-color: #f58278;
+  height: 30px;
+}
+tr:nth-child(odd) {
+  background-color: #f3b1ab;
+}
+.food_menu span {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #301008;
+  font-weight: 600;
+  text-align: center;
+}
+
+#but {
+  background-color: #301008;
+  padding: 8px 80px;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: #f4d8ae;
+  border-style: none;
+  border-radius: 35px;
+  text-align: center;
+}
+
+ table button{
+  background-color: #301008;
+  color: #f4d8ae;
+  font-size: 10px;
+  border-style: none;
+  width: 50px;
+  height: 15px;
+  border-radius: 30px;
+  vertical-align: middle;
+  margin-left: 20%;
+ }
+
+ .cont{
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+ .display{
+  background-color: #f58278 ;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 9%;
+  padding-bottom: 9%;
+  margin-left: 37%;
+  margin-right: 37%;
+  font-size: 25px;
+}
+
+.dec_but{
+  float: left;
+  margin-top: 5%;
+  background-color: #f3b1ab;
+  border-radius: 50%;
+  padding-left:7%;
+  padding-right: 7%;
+  font-size: 50px;
+  padding-bottom:6px;
+}
+.inc_but{
+  float: right;
+  margin-top: 5%;
+  background-color: #f3b1ab;
+  border-radius: 50%;
+  font-size: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.cont h2 {
+  color : #301008;
+  margin-bottom: 15px;
+  text-align: center;
+}
